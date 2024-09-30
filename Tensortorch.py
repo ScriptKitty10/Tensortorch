@@ -11,45 +11,11 @@ from keras.utils import to_categorical
 
 (X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
 
-# Reshape and normalize the data
 X_train = X_train.reshape(-1, 28 * 28).astype('float32') / 255.0
 
-
-# One-hot encode the labels
 y_train = to_categorical(y_train, num_classes=10)
 
-import numpy as np
-
-# Assuming 'images' is your dataset with shape (num_samples, height, width, channels)
-# For example, if you have 1000 images in your dataset:
-# images.shape would be (1000, 28, 28, 1)
-
-# Concatenate all images along the first axis to create a single array
-
-# Flatten the concatenated array
 X_train = X_train.reshape(X_train.shape[0], -1)
-
-
-
-# X, y = ghhgj.create_dataset("_classes.csv",'C:\\Users\\tacoc\\Desktop\\quizzzzz\\Fruits by YOLO\\train\\')
-
-
-# Assuming X is your training data
-# Calculate mean and standard deviation for each feature
-# mean_values = np.mean(X, axis=0)
-# std_dev_values = np.std(X, axis=0)
-
-# # Normalize the data
-# normalized_X = (X - mean_values) / std_dev_values
-
-
-# fruits = list(zip(normalized_X, y))
-
-
-# class InputLayer():
-
-#     def __init__(self, neurons, activation, input_x, input_y):
-        
 
 class DenseLayer():
 

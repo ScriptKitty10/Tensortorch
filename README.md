@@ -2,8 +2,8 @@
 
 World's best deep learning framework!
 
-Note:
-THIS IS STILL IN DEVELOPMENT
+# Note:
+**THIS IS STILL IN DEVELOPMENT**
 
 
 
